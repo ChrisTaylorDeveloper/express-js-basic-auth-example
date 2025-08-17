@@ -4,7 +4,8 @@ const basicAuth = require('express-basic-auth')
 const app = express();
 
 app.use(basicAuth({
-    users: { 'admin': 'pass' }
+    users: { 'admin': 'pass' },
+    challenge: true
 }))
 
 app.get('/', (req, res) => {
