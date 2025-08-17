@@ -3,3 +3,5 @@
 1. `npm install`
 1. `node server.js`
 1. Visit localhost:3000 in your web browser.
+
+With basic auth active, try `curl --verbose http://admin:pass@localhost:3000`
